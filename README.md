@@ -57,6 +57,16 @@ The analytical model contains four tables:
 
 The dimension tables are connected to FactSales through one-to-many relationships.
 
+
+### Gold Layer — Data Model Documentation
+
+The Gold layer implements a dimensional star schema designed
+for analytical reporting in Power BI.
+
+- [Gold Star Schema Design](documentation/Gold_Star_Schema_Design.md)
+- [Gold Star Schema Diagram](architecture/gold-star-schema.md)
+
+
 ## Technologies Used
 
 | Technology | Purpose |
