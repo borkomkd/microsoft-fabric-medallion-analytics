@@ -1,6 +1,11 @@
 
 # Gold Layer — Star Schema Design
 
+### Star Schema Diagram
+
+[View the Gold Star Schema Diagram](../architecture/gold-star-schema.md)
+
+
 ## Project
 Microsoft Fabric | Medallion Architecture & Retail Sales Analytics
 
