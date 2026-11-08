@@ -18,6 +18,8 @@ This project addresses the technical foundations required to deliver reliable re
 
 ## Solution Architecture
 
+[View the Microsoft Fabric Solution Architecture Diagram](architecture/solution-architecture.md)
+
 ```text
 Retail Sales Dataset
         |
