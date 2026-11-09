@@ -52,7 +52,7 @@ The following diagram illustrates the end-to-end data flow,
 from raw retail sales transactions through the Bronze,
 Silver, and Gold layers to the Power BI reporting solution.
 
-![Microsoft Fabric Solution Architecture](images/fabric-solution-architecture.png)
+![Microsoft Fabric Solution Architecture](images/fabric-solution-architecture.svg)
 
 *End-to-end Microsoft Fabric solution architecture,
 including Dataflow Gen2, PySpark, Delta Lake,
