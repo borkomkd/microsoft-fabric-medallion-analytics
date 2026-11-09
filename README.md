@@ -46,6 +46,19 @@ Power BI Report
 RPT_Gold_SalesAnalytics
 ```
 
+### Microsoft Fabric — Solution Architecture Diagram
+
+The following diagram illustrates the end-to-end data flow,
+from raw retail sales transactions through the Bronze,
+Silver, and Gold layers to the Power BI reporting solution.
+
+![Microsoft Fabric Solution Architecture](images/fabric-solution-architecture.png)
+
+*End-to-end Microsoft Fabric solution architecture,
+including Dataflow Gen2, PySpark, Delta Lake,
+Gold star schema, and Power BI.*
+
+
 ### Gold Star Schema
 
 The analytical model contains four tables:
