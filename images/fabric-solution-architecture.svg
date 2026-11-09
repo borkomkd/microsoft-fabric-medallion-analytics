@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+<title id="title">Microsoft Fabric — Retail Sales Analytics Solution Architecture</title>
+<desc id="desc">Retail Sales Source Dataset flows to Bronze Lakehouse, Silver Lakehouse, Gold Lakehouse, Gold Star Schema, Power BI Semantic Model, and Power BI Sales Dashboard.</desc>
+<defs>
+ <style>
+  .heading{font:700 34px 'Segoe UI',Arial,sans-serif;fill:#17233c}
+  .subtitle{font:400 18px 'Segoe UI',Arial,sans-serif;fill:#56657d}
+  .group{font:700 19px 'Segoe UI',Arial,sans-serif;fill:#34425a;letter-spacing:.3px}
+  .name{font:700 21px 'Segoe UI',Arial,sans-serif;fill:#1e293b}
+  .detail{font:400 17px 'Segoe UI',Arial,sans-serif;fill:#475569}
+  .tag{font:600 15px Consolas,'Courier New',monospace;fill:#334155}
+  .arrow{stroke:#64748b;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#arrowhead)}
+ </style>
+ <marker id="arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#64748b"/></marker>
+</defs>
+<rect width="1600" height="760" fill="#ffffff"/>
+<text class="heading" x="75" y="79">Microsoft Fabric — Solution Architecture</text>
+<text class="subtitle" x="75" y="113">Exercise 03  |  Medallion Architecture &amp; Retail Sales Analytics</text>
+<rect x="60" y="152" width="1480" height="245" rx="18" fill="#f8fafc" stroke="#dce4ef" stroke-width="2"/>
+<text class="group" x="85" y="190">DATA ENGINEERING  /  MEDALLION ARCHITECTURE</text>
+<rect x="60" y="434" width="1480" height="245" rx="18" fill="#faf9ff" stroke="#e5e0f4" stroke-width="2"/>
+<text class="group" x="85" y="472">ANALYTICS  /  REPORTING</text>
+<!-- Row 1 cards -->
+<rect x="90" y="226" width="290" height="128" rx="12" fill="#edf4ff" stroke="#8aaddd" stroke-width="2"/>
+<text class="name" x="235" y="269" text-anchor="middle">Retail Sales</text>
+<text class="name" x="235" y="296" text-anchor="middle">Source Dataset</text>
+<text class="detail" x="235" y="328" text-anchor="middle">Raw transaction data</text>
+<rect x="460" y="226" width="290" height="128" rx="12" fill="#fff0e3" stroke="#d69b69" stroke-width="2"/>
+<text class="name" x="605" y="266" text-anchor="middle">Bronze Layer</text>
+<text class="tag" x="605" y="295" text-anchor="middle">LH_Bronze</text>
+<text class="detail" x="605" y="325" text-anchor="middle">Raw Transactions</text>
+<rect x="830" y="226" width="290" height="128" rx="12" fill="#eef2f7" stroke="#a6b3c5" stroke-width="2"/>
+<text class="name" x="975" y="266" text-anchor="middle">Silver Layer</text>
+<text class="tag" x="975" y="295" text-anchor="middle">LH_Silver</text>
+<text class="detail" x="975" y="321" text-anchor="middle">Dataflow Gen2 · Cleansing</text>
+<rect x="1200" y="226" width="290" height="128" rx="12" fill="#fff5d6" stroke="#d8ae3b" stroke-width="2"/>
+<text class="name" x="1345" y="266" text-anchor="middle">Gold Layer</text>
+<text class="tag" x="1345" y="295" text-anchor="middle">LH_Gold</text>
+<text class="detail" x="1345" y="325" text-anchor="middle">PySpark · Delta Lake</text>
+<path class="arrow" d="M380 290 H452"/><path class="arrow" d="M750 290 H822"/><path class="arrow" d="M1120 290 H1192"/>
+<!-- Row 2 reverse path -->
+<rect x="1200" y="508" width="290" height="128" rx="12" fill="#fff5d6" stroke="#d8ae3b" stroke-width="2"/>
+<text class="name" x="1345" y="545" text-anchor="middle">Gold Star Schema</text>
+<text class="detail" x="1345" y="575" text-anchor="middle">FactSales · DimDate</text>
+<text class="detail" x="1345" y="602" text-anchor="middle">DimProduct · DimCustomer</text>
+<rect x="830" y="508" width="290" height="128" rx="12" fill="#f0ebff" stroke="#a38ade" stroke-width="2"/>
+<text class="name" x="975" y="545" text-anchor="middle">Semantic Model</text>
+<text class="tag" x="975" y="575" text-anchor="middle">SM_Gold_SalesAnalytics</text>
+<text class="detail" x="975" y="602" text-anchor="middle">Relationships · DAX</text>
+<rect x="460" y="508" width="290" height="128" rx="12" fill="#f0ebff" stroke="#a38ade" stroke-width="2"/>
+<text class="name" x="605" y="545" text-anchor="middle">Power BI Dashboard</text>
+<text class="tag" x="605" y="575" text-anchor="middle">RPT_Gold_SalesAnalytics</text>
+<text class="detail" x="605" y="602" text-anchor="middle">Sales Performance Overview</text>
+<path class="arrow" d="M1345 354 V500"/><path class="arrow" d="M1200 572 H1128"/><path class="arrow" d="M830 572 H758"/>
+<text x="90" y="715" font-family="'Segoe UI',Arial,sans-serif" font-size="16" fill="#64748b">Microsoft Fabric  ·  End-to-end retail sales analytics learning project</text>
+</svg>
