@@ -83,7 +83,6 @@ learning project, covering Bronze, Silver, and Gold layers,
 data quality validation, dimensional modeling, and
 Power BI reporting.
 
-- [Exercise 03 Completion Summary](documentation/Exercise_03_Microsoft_Fabric_Completion_Summary.md)
 
 
 ## Technologies Used
