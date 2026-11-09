@@ -135,6 +135,20 @@ The final Power BI report provides the following validated KPIs for 2025:
 - Interactive month filtering
 - SQL-to-Power BI metric reconciliation
 
+## Power BI — Sales Performance Dashboard
+
+The Sales Performance Overview dashboard presents the analytical
+results of the Microsoft Fabric Medallion Architecture solution.
+
+It provides business users with visibility into sales revenue,
+transaction volumes, units sold, monthly revenue trends,
+and product-level sales performance.
+
+![Power BI Sales Performance Overview](images/power-bi-sales-overview.png)
+
+*Sales Performance Overview — Retail Sales Analytics, 2025.
+Built using Power BI and the validated Gold-layer star schema.*
+
 ## Project Documentation
 
 For the detailed implementation summary, validation results, and technical reflections, see:
