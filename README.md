@@ -66,6 +66,25 @@ for analytical reporting in Power BI.
 - [Gold Star Schema Design](documentation/Gold_Star_Schema_Design.md)
 - [Gold Star Schema Diagram](architecture/gold-star-schema.md)
 
+### Gold Layer — Technical Implementation
+
+The Gold layer was implemented using PySpark and Delta Lake
+in Microsoft Fabric. The transformation converts validated
+Silver transactions into analytical fact and dimension tables.
+
+- [Gold PySpark Transformation Documentation](documentation/Gold_PySpark_Transformation.md)
+- [Gold PySpark Notebook](notebooks/NB_Gold_Transformation_GitHub.ipynb)
+- [Gold SQL Validation](documentation/Gold_SQL_Validation.md)
+
+### Project Completion
+
+Exercise 03 was completed as a hands-on Microsoft Fabric
+learning project, covering Bronze, Silver, and Gold layers,
+data quality validation, dimensional modeling, and
+Power BI reporting.
+
+- [Exercise 03 Completion Summary](documentation/Exercise_03_Microsoft_Fabric_Completion_Summary.md)
+
 
 ## Technologies Used
 
