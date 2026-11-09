@@ -4,21 +4,41 @@
 ## Exercise 03: Medallion Architecture & Retail Sales Analytics
 
 ```mermaid
-flowchart TD
-    A["Retail Sales Source Dataset"]
-    B["Bronze Layer<br/>LH_Bronze<br/>Raw Transactions"]
-    C["Silver Layer<br/>LH_Silver<br/>Dataflow Gen2 and Data Cleansing"]
-    D["Gold Layer<br/>LH_Gold<br/>PySpark and Delta Lake"]
-    E["Gold Star Schema<br/>FactSales, DimDate,<br/>DimProduct, DimCustomer"]
-    F["SM_Gold_SalesAnalytics<br/>Semantic Model and DAX"]
-    G["RPT_Gold_SalesAnalytics<br/>Power BI Sales Dashboard"]
 
-    A --> B
-    B --> C
-    C --> D
+flowchart TB
+    subgraph ROW1["Data Engineering — Medallion Architecture"]
+        direction LR
+        A["Retail Sales<br/>Source Dataset"]
+        B["Bronze Layer<br/>LH_Bronze<br/>Raw Transactions"]
+        C["Silver Layer<br/>LH_Silver<br/>Dataflow Gen2<br/>Data Cleansing"]
+        D["Gold Layer<br/>LH_Gold<br/>PySpark & Delta Lake"]
+
+        A --> B --> C --> D
+    end
+
+    subgraph ROW2["Analytics & Reporting"]
+        direction LR
+        E["Gold Star Schema<br/>FactSales · DimDate<br/>DimProduct · DimCustomer"]
+        F["SM_Gold_SalesAnalytics<br/>Semantic Model & DAX"]
+        G["RPT_Gold_SalesAnalytics<br/>Power BI Sales Dashboard"]
+
+        E --> F --> G
+    end
+
     D --> E
-    E --> F
-    F --> G
+
+    classDef source fill:#F1F5F9,stroke:#64748B,color:#0F172A
+    classDef bronze fill:#FFF1E6,stroke:#C77836,color:#713F12
+    classDef silver fill:#F1F5F9,stroke:#64748B,color:#334155
+    classDef gold fill:#FEF3C7,stroke:#D4A017,color:#78350F
+    classDef reporting fill:#EDE9FE,stroke:#7C3AED,color:#4C1D95
+
+    class A source
+    class B bronze
+    class C silver
+    class D,E gold
+    class F,G reporting
+
 ```
 
 ## Architecture Overview
