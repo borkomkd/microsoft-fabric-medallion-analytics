@@ -10,6 +10,12 @@ The solution transforms raw retail sales transactions into validated analytical 
 
 **Project status:** Completed and validated as a hands-on learning project.
 
+**Business Context**
+
+Retail businesses need reliable and consistent sales information to monitor performance, understand revenue trends, and evaluate product-level results.
+
+This project demonstrates how Microsoft Fabric can transform raw transactional data into a validated analytical foundation for business reporting. By combining structured data transformations, dimensional modeling, and Power BI dashboards, the solution supports clearer visibility into sales performance and more informed business decisions.
+
 ## Business Challenge
 
 Retail businesses need accurate and consistent sales information to monitor performance, identify revenue trends, and understand product contributions.
